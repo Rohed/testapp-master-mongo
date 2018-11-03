@@ -346,7 +346,7 @@ $('.tabs .tab-links a').on('click', function(e) {
         selPage='Inventory';
     } else if (current == '#tab11') {
    
-        selPage='Finctions';
+        selPage='Functions';
     }
   hideDiv();
       google.script.run.withSuccessHandler(logSuccess).logUser(selPage,app);  
@@ -6533,6 +6533,7 @@ var obj ={
 months:parseInt($("#globalFilterMonths").val(),10),
  
 }
+console.log('obj',obj);
 google.script.run.withSuccessHandler(refreshOrdersMSG).updateglobalFilter(obj);
 
 }

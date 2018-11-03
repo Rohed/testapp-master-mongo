@@ -622,7 +622,7 @@ function getLocations() {
 
 function getSearchedArray(page, params) {
 
-if(params.equalTo == 'all'||page=='QTY'||page=='Locations'||page=='Finctions'){
+if(params.equalTo == 'all'||page=='QTY'||page=='Locations'||page=='Functions'){
 
  return [page,JSONtoARR(base.getData(page))];
 }
