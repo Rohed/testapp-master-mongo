@@ -2319,8 +2319,7 @@ $('#rowsTotal'+thisPage).html(rowsTotal);
     }
 
     function populateQTYTable(data,page) {
-  
-       
+      
         var html = '';
     
         html += '<table class="table"><thead><tr><th>Row</th><th>SKU</th><th>Menu</th><th>Name</th><th>Running</th><th>Reserved</th><th>Completed</th><th>Stock on Order</th></tr></thead>';
@@ -2389,7 +2388,7 @@ google.script.run.withSuccessHandler(buildQTYFormFromExisting).getSingleQTYData(
     function buildQTYFormFromExisting(dat) {
     var data=dat.data;
     var page=dat.page;
-  //  console.log(data);
+  
         var html = '';
         html += '<table class="form_table">';
       
@@ -3852,7 +3851,7 @@ var INPDATA;
     }
 
    function buildItemFormFromExisting(retval) {
-        console.log(retval);
+   
        INPDATA = retval[0];
         var dataold = retval[1];
     
