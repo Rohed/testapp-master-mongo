@@ -476,7 +476,7 @@ function assignMixture2(data) {
         var LOGARR = new Array();
         var starttime = new Date().getTime();
         var dat1 = {
-            final_status: 'Not Run',
+            final_status: 'Busy',
             starttime: starttime,
         };
 
