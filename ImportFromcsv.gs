@@ -332,7 +332,7 @@ ordersByOrderID = {};
                         item.batch='911000';
                       }
                       if(i==values.length-1){
-                        base.updateData('highestBatch',{'batch':parseInt(batch,10)});
+                        base.updateData('highestBatch/1',{'batch':parseInt(batch,10)});
                       }  
                         var resp = saveOrder2(item,row);
                         LOGDATA.data.push(['Added Batch',item.batch +'With Order ID: '+orderID ]);
@@ -392,7 +392,7 @@ ordersByOrderID = {};
         }
         
       }
-      return msg+' '+i;
+      return msg+' <br> Reached Line: '+i;
     } catch (e) {
      LOGDATA.data.push(['Failed: ',e.toString()]); 
       logItem(LOGDATA);

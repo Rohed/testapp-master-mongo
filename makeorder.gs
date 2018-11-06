@@ -277,7 +277,7 @@ function bulkrun(arr, page) {
 
 
 function testrun() {
-    runItem('914025', false);
+    runItem('916933', false);
 
 }
 
@@ -884,7 +884,7 @@ function saveOrderArray(arr) {
                 data.batch = '911000';
             }
             if (i == arr.length - 1) {
-                base.updateData('highestBatch', {
+                base.updateData('highestBatch/1', {
                     'batch': parseInt(data.batch, 10)
                 });
             }

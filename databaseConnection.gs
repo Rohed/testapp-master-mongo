@@ -75,10 +75,10 @@ function formQueryFromPath(path) {
     var query = 'path='+splitPath[0];
 
     if (splitPath[1]) {
-        query += '&id=' + splitPath[1];
+        query += '&id=' +  encodeURIComponent(splitPath[1]);
     }
  if (splitPath[2]) {
-        query += '&id2=' + splitPath[2];
+        query += '&id2=' + encodeURIComponent(splitPath[2]);
     }
     return query;
 }
@@ -88,12 +88,12 @@ function formQueryFromParams(params) {
     if (params) {
         if (params.orderBy) {
 
-            query += '&orderBy='+params.orderBy
+            query += '&orderBy='+encodeURIComponent(params.orderBy);
         }
 
        if (params.equalTo) {
 
-            query += '&equalTo='+params.equalTo
+            query += '&equalTo='+encodeURIComponent(params.equalTo);
         }
 
 
