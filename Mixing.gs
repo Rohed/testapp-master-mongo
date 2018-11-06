@@ -271,7 +271,7 @@ function toMixingTeam(data, createNew, old) {
             mixingData.CBDrecipe = data.CBDrecipe;
         
         var MIXBATCH = {
-            orderdate: Utilities.formatDate(new Date(), "GMT", "dd-MM-yyyy"),
+            orderdate:new Date().getTime(),
             QTYTOTAL: data.QTY,
             Batches:[],
             MIXNAME: mixingData.mixbatch,
