@@ -279,6 +279,9 @@ function toMixingTeam(data, createNew, old) {
             RECIPE: data.recipe.name,
             VGval: data.VGval,
             PGval: data.PGval,
+            'MCTval': data.MCTval,
+            'MCTrecipe': data.MCTrecipe,
+            'AGval': data.AGval,
             'flavour': data.flavour,
             flavvalue: data.flavvalue,
             recipe: data.recipe,
@@ -298,7 +301,7 @@ function toMixingTeam(data, createNew, old) {
             MIXBATCH.nic = data.recipe.nic;
             MIXBATCH.Nicosalts = data.Nicosalts;
             MIXBATCH.nicsalts = data.recipe.nicsalts;
-        
+             
             MIXBATCH.CBDvalue = data.CBDvalue;
             MIXBATCH.cbd = data.recipe.cbd;
            MIXBATCH.Batches.push(mixingData);
