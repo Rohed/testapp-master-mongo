@@ -151,7 +151,7 @@ function runBusy(batch, page) {
                 var year = d.getFullYear();
                 var month = d.getMonth();
                 var day = d.getDate() + 1;
-                data.expDate = Utilities.formatDate(new Date(year + 2, month, day), "GMT", "dd-MM-yyyy");
+                data.expDate =  new Date(year + 2, month, day).getTime();
 
                 data.printing_status = "Busy"
                 order.printing_status = "Busy"

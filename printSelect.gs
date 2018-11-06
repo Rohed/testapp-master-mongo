@@ -112,7 +112,7 @@ function printPackagingBatches(SELECTED,force) {
 
 function testPRING(){
   
-  printShippingNote(['71474925','4670815','27656320'],1);
+  printShippingNote(['13897965'],1);
 }
 
 
